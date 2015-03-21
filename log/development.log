@@ -66560,3 +66560,330 @@ Started GET "/assets/expense_types.js?body=1" for 127.0.0.1 at 2015-03-21 14:37:
 
 
 Started GET "/assets/Material-Design-Icons.woff?-g7cqhn" for 127.0.0.1 at 2015-03-21 14:37:47 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-21 15:50:53 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by JournalsController#index as HTML
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mAccount Load (0.7ms)[0m  [1mSELECT "accounts".* FROM "accounts"   ORDER BY "accounts"."account_number" ASC[0m
+  [1m[35mExpenseType Load (1.2ms)[0m  SELECT "expense_types".* FROM "expense_types"   ORDER BY "expense_types"."name" ASC
+  Rendered journals/_form.html.erb (106.9ms)
+  [1m[36mJournal Load (0.7ms)[0m  [1mSELECT "journals".* FROM "journals"  WHERE "journals"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35mAccount Load (0.3ms)[0m  SELECT  "accounts".* FROM "accounts"  WHERE "accounts"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mExpenseType Load (0.3ms)[0m  [1mSELECT  "expense_types".* FROM "expense_types"  WHERE "expense_types"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered journals/index.html.erb within layouts/home (176.5ms)
+Completed 200 OK in 2444ms (Views: 2278.0ms | ActiveRecord: 21.1ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-md.css?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-material-design/material.css?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-material-design/snackbar.css?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-material-design/index.css?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/assets/bootstrap-datepicker.css?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+
+
+Started GET "/assets/bootstrap-material-design/ripples.css?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-material-design/material.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-material-design/jquery.nouislider.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-material-design/index.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-material-design/ripples.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-material-design/snackbar.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ar.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/core.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bs.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.az.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cs.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.bg.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ca.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.da.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.cy.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.en-GB.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.de.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.et.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.el.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.es.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fa.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.eu.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.gl.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fi.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr-CH.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fo.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.fr.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hr.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.he.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hu.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.id.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it-CH.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ja.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ka.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kh.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kk.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.hy.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.is.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.kr.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.it.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.me.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lt.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ms.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.lv.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl-BE.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.mk.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nb.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.no.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.nl.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pl.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.pt-BR.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs-latin.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ro.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ru.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.rs.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sq.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sk.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sl.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.th.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sr-latin.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sr.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sv.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.sw.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.ua.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.tr.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.uk.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/index.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.vi.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/bootstrap-datepicker/locales/bootstrap-datepicker.zh-TW.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:56 +0800
+
+
+Started GET "/assets/accounts.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:57 +0800
+
+
+Started GET "/assets/expense_types.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:57 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:57 +0800
+
+
+Started GET "/assets/journals.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:57 +0800
+
+
+Started GET "/assets/moment.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:57 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:57 +0800
+
+
+Started GET "/assets/bootstrap-material-datepicker.js?body=1" for 127.0.0.1 at 2015-03-21 15:50:57 +0800
+
+
+Started GET "/assets/Material-Design-Icons.woff?-g7cqhn" for 127.0.0.1 at 2015-03-21 15:50:57 +0800
