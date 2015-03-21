@@ -1,0 +1,45 @@
+<div class="page-header">
+  <button type="button" class="btn btn-fab btn-fab-mini btn-raised btn-sm btn-primary pull-right" data-toggle="modal" data-target="#myModal">
+    <i class="mdi-content-add"></i>
+  </button>
+  <h3>Expense Types</h3>
+</div>
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog" style="max-width: 80%; margin-top: 12%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">New Journal Entry</h4>
+      </div>
+      <div class="modal-body">
+        <%  @expense_type = current_user.expense_types.new %>
+        <%= render 'form' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Name</th>
+            <th>User</th>
+            <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @expense_types) do |expense_type| %>
+            <td><%= expense_type.name %></td>
+            <td><%= expense_type.user_id %></td>
+            <td><%= link_to 'Show', expense_type %></td>
+        <td><%= link_to 'Edit', edit_expense_type_path(expense_type) %></td>
+        <td><%= link_to 'Destroy', expense_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>

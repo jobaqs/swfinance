@@ -1,0 +1,20 @@
+<div class="page-header">
+  <%= link_to expense_types_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_expense_type_path(@expense_type), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show expense_type</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Name:</dt>
+  <dd><%= @expense_type.name %></dd>
+
+  <dt>User:</dt>
+  <dd><%= @expense_type.user_id %></dd>
+
+</dl>

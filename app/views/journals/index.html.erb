@@ -1,0 +1,55 @@
+<div class="page-header">
+  <button type="button" class="btn btn-fab btn-fab-mini btn-raised btn-sm btn-primary pull-right" data-toggle="modal" data-target="#myModal">
+    <i class="mdi-content-add"></i>
+  </button>
+  <h3>Cash Journals</h3>
+</div>
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog" style="max-width: 80%; margin-top: 12%;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">New Journal Entry</h4>
+      </div>
+      <div class="modal-body">
+        <%  @journal = current_user.journals.new %>
+        <%= render 'form' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="table-responsive">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Journal date</th>
+            <th>Payee</th>
+            <th>Description</th>
+            <th>Account</th>
+            <th>Expense Type</th>
+            <th>Amount</th>
+            <th colspan="2">Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @journals) do |journal| %>
+            <td><%= journal.journal_date.strftime("%d/%m/%Y") %></td>
+            <td><%= journal.payee %></td>
+            <td><%= journal.description %></td>
+            <td><%= journal.account.account_name %></td>
+            <td><%= journal.expense_type.name unless journal.expense_type_id.blank? %></td>
+            <td align="right"><%= number_to_currency(journal.amount, unit: "") %></td>
+            <td><%= link_to 'Edit', edit_journal_path(journal) %></td>
+            <td><%= link_to 'Delete', journal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
